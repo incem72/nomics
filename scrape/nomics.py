@@ -9,10 +9,6 @@ import sys
 URL = constants.url
 HEADERS = constants.headers
 
-# pip install requests
-# pip install beautifulsoup4
-# pip install pandas
-
 def extract_currency_urls(page_data):
     page_tr = page_data.findAll("tr", {"class": "bb b--black-10 bn-last-tr n-table-ph n-bg-table-row tp-bc td-1 dash-row-visibility"})
     list_urls=[]
